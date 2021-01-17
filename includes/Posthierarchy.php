@@ -10,7 +10,7 @@ class Posthierarchy {
 		//$this->define_public_hooks();
 		//$this->create_master_settings();
 		//$this->create_custom_post();
-		$this->support();
+		//$this->support();
 	}
 
 	private function define_public_hooks() {
@@ -21,11 +21,7 @@ class Posthierarchy {
 
 	private function define_admin_hooks() {
 		$plugin_admin = new Posthierarchy_Admin();
-		//$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
-		//$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
-        //$this->loader->add_action( 'activated_plugin', $plugin_admin, 'activation_redirect' );
-        //add_action( 'init',array($this,'activate_child_post_by_option'));
-        $this->loader->add_action( 'registered_post_type', $plugin_admin, 'enable_hierarchy_fields', 123, 2);
+		$this->loader->add_action( 'registered_post_type', $plugin_admin, 'enable_hierarchy_fields', 123, 2);
         $this->loader->add_filter( 'post_type_labels_post', $plugin_admin, 'enable_hierarchy_fields_for_js', 11, 2);
         $this->loader->add_filter( 'pre_post_link', $plugin_admin, 'change_permalinks', 8, 3 );
         $this->loader->add_action( 'registered_post_type',	$plugin_admin, 'method__modify_post_obj', 150 , 2);

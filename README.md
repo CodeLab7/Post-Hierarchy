@@ -1,14 +1,14 @@
-# Webdev Helper
+# Post Hierarchy [WordPress Plugin]
 
-![Codelab7](https://codelab7.com/wp-content/themes/codelab7/assets/images/logo/logo.png)
+![Codelab7](https://media.publit.io/file/w_500/CL7/logo-full-rectangle.png)
 
-A Handy plugin to help new wordpress development. To start working and twisting wordpress functinality, this plugin provide base for the new plugin.
+A Handy Plugin For WordPress. Help you to set a post to child post of another post. which let you create a sub posts, numbered posts etc.
 
 ## Use
 - Download Zip and unzip it at `wp-content/plugins` Folder.
-- Start with `webdevhelper.php` to change Plug In Name.
+- Activate Plugin from wordpress admin
+- go to the post and edit/quick edit the post you want to set as a child and select the parent post.
 
-### Register Actions and Hooks
-You can use `includes/class-webdevhelper.php` file for adding actions and hooks.  Define hooks under `define_public_hooks` and `define_admin_hooks` as per your use.
-
-And there must be a function for the same into file `public/class-webdevhelper-public.php` and `admin/class-webdevhelper-admin.php` for doing things with actions.
+###ToDO
+- Set Options for sulg re-writing.
+- Set Option to loop out the child posts only. 
