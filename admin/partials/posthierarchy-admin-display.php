@@ -1,3 +1,0 @@
-<?php
-//All Code here
-?>

@@ -1,8 +1,8 @@
 <?php
 
 class Posthierarchy_Abstruct {
-	protected $plugin_name = 'webdevhelper';
-	protected $text_domain = 'webdevhelper';
+	protected $plugin_name = 'Post Hierarchy';
+	protected $text_domain = 'post-hierarchy';
 	protected $version = POSTHIERARCHY_VERSION;
 
 	protected function error_on() {
