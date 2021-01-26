@@ -13,9 +13,9 @@ class Posthierarchy {
     private function define_admin_hooks() {
         $plugin_admin = new Posthierarchy_Admin();
         $this->loader->add_action('registered_post_type', $plugin_admin, 'enable_hierarchy_fields', 123, 2);
-        $this->loader->add_filter('post_type_labels_post', $plugin_admin, 'enable_hierarchy_fields_for_js', 11, 2);
+        $this->loader->add_filter('post_type_labels_post', $plugin_admin, 'change_labels', 11, 2);
         $this->loader->add_filter('pre_post_link', $plugin_admin, 'change_permalinks', 8, 3);
-        $this->loader->add_action('registered_post_type', $plugin_admin, 'method__modify_post_obj', 150, 2);
+
     }
 
     private function load_dependencies() {

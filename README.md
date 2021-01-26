@@ -5,13 +5,11 @@
 A Handy Plugin For WordPress. Help you to set a post to child post of another post. which let you create a sub posts, numbered posts etc.
 
 ## Use
-
 - Download Zip and unzip it at `wp-content/plugins` Folder.
 - Activate Plugin from wordpress admin
 - go to the post and edit/quick edit the post you want to set as a child and select the parent post.
 
 
-###ToDO
-
+### ToDo
 - Set Options for sulg re-writing.
 - Set Option to loop out the child posts only. 
